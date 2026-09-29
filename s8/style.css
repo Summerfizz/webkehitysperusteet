@@ -166,3 +166,16 @@
                 min-height: 60vh;
             }
         }
+
+    .factory-card {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                      url("images/factory.jpg");
+        background-size: cover;
+        background-position: center;
+}
+
+.card:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
