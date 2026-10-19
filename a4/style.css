@@ -1,0 +1,48 @@
+/* Tekijä: Melissa Lehtisola */
+
+body {
+    background-color: #f2f5f1;
+    color: #26352b;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: #386641;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    
+}
+
+.gallery img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
