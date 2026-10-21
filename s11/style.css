@@ -256,14 +256,14 @@ form.card input[type="email"] {
     max-width: 350px;
 }
 
-input:not([type="radio"]):invalid,
-select:user-invalid,
-textarea:user-invalid {
-    border: 2px dashed #b00020;
+form.card input:not([type="radio"]):invalid,
+form.card select:invalid,
+form.card textarea:invalid {
+    border: 2px dashed #b00020 !important;
 }
 
-input:not([type="radio"]):valid,
-select:user-valid,
-textarea:user-valid {
-    border: 2px solid #24733c;
+form.card input:not([type="radio"]):valid,
+form.card select:valid,
+form.card textarea:valid {
+    border: 2px solid #24733c !important;
 }
