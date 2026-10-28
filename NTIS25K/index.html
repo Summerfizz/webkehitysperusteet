@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luontopolku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="rajaus header-sisalto">
+            <a href="index.html" class="logo">Luontopolku</a>
+            <!--Hampulrilaisvalikko tulee tähän-->
+            <input type="checkbox" id="valikko-auki" class="valikko-checkbox">
+            <label for="valikko-auki" class="hampurilainen">&#9776</label>
+            
+
+            <nav class="Paavalikko">
+                <a href="#retket">Retket</a>
+                <a href="#yhteystiedot">Yhteystiedot</a>
+            </nav>
+
+
+
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="rajaus hero-sisalto">
+                <h1>Retkelle luontoon</h1>
+                <p>Retkeily luonnossa on mukavaa.</p>
+                <a href="#retket" class="paalinkki">Tutustu retkiin</a>
+
+            </div>
+        </section>
+        <section class="retket rajaus" id="retket">
+            <h2>Valitse oma retkesi</h2>
+            <!--Muodostetaan säilö kaikille korteille-->
+            <div class="kortit">
+                <article class="kortti">
+                    <h3>Metsäpolku</h3>
+                    <p>Kuljemme tammimetsän halki</p>
+                    <ul class="tiedot">
+                        <li>Pituus 5 km</li>
+                        <li>Vaikeus: helpppo</li>
+                        <li>Kesto noin 1 tunti</li>
+                    </ul>
+                    <a href="#yhteystiedot" class="korttilinkki">Kysy lisää</a>
+                </article>
+                <article class="kortti">
+                    <h3>Metsäpolku</h3>
+                    <p>Kuljemme tammimetsän halki</p>
+                    <ul class="tiedot">
+                        <li>Pituus 5 km</li>
+                        <li>Vaikeus: helpppo</li>
+                        <li>Kesto noin 1 tunti</li>
+                    </ul>
+                    <a href="#yhteystiedot" class="korttilinkki">Kysy lisää</a>
+                </article>
+                <article class="kortti">
+                    <h3>Metsäpolku</h3>
+                    <p>Kuljemme tammimetsän halki</p>
+                    <ul class="tiedot">
+                        <li>Pituus 5 km</li>
+                        <li>Vaikeus: helpppo</li>
+                        <li>Kesto noin 1 tunti</li>
+                    </ul>
+                    <a href="#yhteystiedot" class="korttilinkki">Kysy lisää</a>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
