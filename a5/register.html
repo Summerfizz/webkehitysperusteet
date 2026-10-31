@@ -1,0 +1,60 @@
+<!-- Tekijä: Melissa Lehtisola -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sivun kuvaus">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Rekisteröityminen</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="gallery.html">Kuvagalleria</a></li>
+            <li><a href="register.html"><strong>Rekisteröidy</strong></a></li>
+        </ul>
+    </nav>
+    <h1>Rekisteröityminen</h1>
+    <p>Tervetuloa rekisteröitymään sivustolle!</p>
+    <p>Täytä alla oleva lomake ja luo itsellesi käyttäjätili.</p>
+    <form action="https://httpbin.org/post" method="post">
+    
+        <div class="form-group">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Sähköpostiosoite:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Käyttäjänimi:</label>
+            <input type="text" id="username" name="username" minlength="3" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Salasana:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+        <div class="form-group">
+            <label for="usertype">Käyttäjätyyppi</label>
+            <select id="usertype" name="usertype" required>
+                <option value="">Valitse käyttäjätyyppi</option>
+                <option value="photographer">Valokuvaaja</option>
+                <option value="enthusiast">Valokuvien harrastaja</option>
+                <option value="viewer">Kuvien katselija</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Hyväksyn sivuston käyttöehdot</label>
+        </div>
+        <button type="submit">Rekisteröidy</button>
+    </form>
+    <img src="images/maisema.jpg" alt="Maisema">
+</body>
+
+</html>
